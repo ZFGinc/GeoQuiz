@@ -6,9 +6,9 @@
 6
 7    <uses-sdk
 8        android:minSdkVersion="19"
-8-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml
+8-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml
 9        android:targetSdkVersion="33" />
-9-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml
+9-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml
 10
 11    <permission
 11-->[androidx.core:core:1.9.0] C:\Users\Kizai.KIZAI-WIN\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:22:5-24:47
@@ -22,40 +22,40 @@
 15-->[androidx.core:core:1.9.0] C:\Users\Kizai.KIZAI-WIN\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:26:22-94
 16
 17    <application
-17-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:5:5-23:19
+17-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:5:5-23:19
 18        android:allowBackup="true"
-18-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:6:9-35
+18-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:6:9-35
 19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 19-->[androidx.core:core:1.9.0] C:\Users\Kizai.KIZAI-WIN\.gradle\caches\transforms-3\24c8031572ced1a9ec505ef2513af626\transformed\core-1.9.0\AndroidManifest.xml:28:18-86
 20        android:dataExtractionRules="@xml/data_extraction_rules"
-20-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:7:9-65
+20-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:7:9-65
 21        android:debuggable="true"
 22        android:fullBackupContent="@xml/backup_rules"
-22-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:8:9-54
+22-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:8:9-54
 23        android:icon="@mipmap/ic_launcher"
-23-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:9:9-43
+23-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:9:9-43
 24        android:label="@string/app_name"
-24-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:10:9-41
+24-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:10:9-41
 25        android:supportsRtl="true"
-25-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:11:9-35
+25-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:11:9-35
 26        android:testOnly="true"
 27        android:theme="@style/Theme.GeoQuize" >
-27-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:12:9-46
+27-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:12:9-46
 28        <activity
-28-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:14:9-22:20
+28-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:14:9-22:20
 29            android:name="com.zfginc.geoquize.MainActivity"
-29-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:15:13-41
+29-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:15:13-41
 30            android:exported="true" >
-30-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:16:13-36
+30-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:16:13-36
 31            <intent-filter>
-31-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:17:13-21:29
+31-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:17:13-21:29
 32                <action android:name="android.intent.action.MAIN" />
-32-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:18:17-69
-32-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:18:25-66
+32-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:18:17-69
+32-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:18:25-66
 33
 34                <category android:name="android.intent.category.LAUNCHER" />
-34-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:20:17-77
-34-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuize\app\src\main\AndroidManifest.xml:20:27-74
+34-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:20:17-77
+34-->C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:20:27-74
 35            </intent-filter>
 36        </activity>
 37

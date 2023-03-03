@@ -2700,6 +2700,8 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable arrow_left
+drawable arrow_rigth
 drawable avd_hide_password
 drawable avd_show_password
 drawable btn_checkbox_checked_mtrl
@@ -3141,6 +3143,7 @@ id pin
 id position
 id postLayout
 id pressed
+id previos_button
 id progress_circular
 id progress_horizontal
 id question_text
@@ -3639,6 +3642,7 @@ string path_password_eye
 string path_password_eye_mask_strike_through
 string path_password_eye_mask_visible
 string path_password_strike_through
+string previos_button
 string question_0
 string question_1
 string question_2

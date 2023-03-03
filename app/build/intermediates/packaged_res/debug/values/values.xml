@@ -11,8 +11,9 @@
     <string name="currect_toast">Ответ верный!</string>
     <string name="false_button">Не верно</string>
     <string name="incurrect_toast">Ответ не верный!</string>
-    <string name="next_button">Я не знаю</string>
+    <string name="next_button">Предыдущий вопрос</string>
     <string name="next_toast">Очень жаль</string>
+    <string name="previos_button">Следующий вопрос</string>
     <string name="question_0">2 + 2 = 4 ?</string>
     <string name="question_1">2 * 2 = 4 ?</string>
     <string name="question_2">2 * 3 = 9 ?</string>

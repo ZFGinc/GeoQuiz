@@ -7,10 +7,13 @@ color purple_700
 color teal_200
 color teal_700
 color white
+drawable arrow_left
+drawable arrow_rigth
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 id false_button
 id next_button
+id previos_button
 id question_text
 id true_button
 layout activity_main
@@ -22,6 +25,7 @@ string false_button
 string incurrect_toast
 string next_button
 string next_toast
+string previos_button
 string question_0
 string question_1
 string question_2
