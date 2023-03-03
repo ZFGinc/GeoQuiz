@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">GeoQuize</string>
+    <string name="question_text">Москва - это столица?</string>
+    <string name="true_button">Верно</string>
+    <string name="false_button">Не верно</string>
+    <string name="next_button">Я не знаю</string>
+    <string name="next_toast">Очень жаль</string>
+    <string name="currect_toast">Ответ верный!</string>
+    <string name="incurrect_toast">Ответ не верный!</string>
+    //Вопросы
+    <string name="question_0">2 + 2 = 4 ?</string>
+    <string name="question_1">2 * 2 = 4 ?</string>
+    <string name="question_2">2 * 3 = 9 ?</string>
+    <string name="question_3">3 * 3 = 9 ?</string>
+    <string name="question_4">10 * 0 = 10 ?</string>
+    <string name="question_5">5 + 5 + 0 = 550 ?</string>
+</resources>
