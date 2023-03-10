@@ -2,15 +2,15 @@ package com.zfginc.geoquize
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Gravity
+import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
-import org.w3c.dom.Text
 
+private const val TAG = "MainActivity";
 class MainActivity : AppCompatActivity() {
-
     private lateinit var true_button:Button;
     private lateinit var false_button:Button;
 
@@ -31,6 +31,7 @@ class MainActivity : AppCompatActivity() {
     );
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        Log.d(TAG, "onCreate() called");
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -41,22 +42,10 @@ class MainActivity : AppCompatActivity() {
         questionTextView = findViewById(R.id.question_text);
 
         true_button.setOnClickListener(){
-            if(questionBank[currentindex].answer == true) {
-                showToast(R.string.currect_toast);
-                nextQuestion();
-            }
-            else{
-                showToast(R.string.incurrect_toast);
-            }
+            trueButton();
         }
         false_button.setOnClickListener(){
-            if(questionBank[currentindex].answer == false) {
-                showToast(R.string.currect_toast);
-                nextQuestion();
-            }
-            else{
-                showToast(R.string.incurrect_toast);
-            }
+            falseButton();
         }
 
         next_button.setOnClickListener(){
@@ -75,20 +64,42 @@ class MainActivity : AppCompatActivity() {
         questionTextView.setText(questionTextResId)
     }
 
+    private fun trueButton(){
+        if(questionBank[currentindex].answer) {
+            showToast(R.string.currect_toast);
+            nextQuestion();
+        }
+        else{
+            showToast(R.string.incurrect_toast);
+        }
+    }
+
+    private fun falseButton() {
+        if(!questionBank[currentindex].answer) {
+            showToast(R.string.currect_toast);
+            nextQuestion();
+        }
+        else{
+            showToast(R.string.incurrect_toast);
+        }
+    }
+
     private fun showToast(text: Int){
         toast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
         //toast.setGravity(Gravity.TOP, 0, 0);
         toast.show();
     }
     private fun nextQuestion(){
-        currentindex = (currentindex+1) % questionBank.size;
+        currentindex++;
+        if(currentindex == questionBank.size) currentindex = questionBank.size - 1;
+
         val questionTextResId = questionBank[currentindex].textResId;
         questionTextView.setText(questionTextResId);
     }
     private fun previosQuestion(){
-        if(currentindex == 0) currentindex = questionBank.size;
+        currentindex--;
+        if(currentindex < 0) currentindex = 0;
 
-        currentindex = (currentindex-1) % questionBank.size;
         val questionTextResId = questionBank[currentindex].textResId;
         questionTextView.setText(questionTextResId);
     }

@@ -1,4 +1,4 @@
-#Fri Mar 03 17:40:23 SAKT 2023
+#Fri Mar 10 13:33:20 SAKT 2023
 base.0=C\:\\Users\\Kizai.KIZAI-WIN\\Desktop\\AndroidStudioProjects\\GeoQuiz\\app\\build\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 renamed.0=classes.dex
 path.0=classes.dex

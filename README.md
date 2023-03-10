@@ -105,7 +105,9 @@ class MainActivity : AppCompatActivity() {
   }
   
   private fun nextQuestion(){
-    currentindex = (currentindex+1) % questionBank.size;
+    currentindex++;
+    if(currentindex == questionBank.size) currentindex = questionBank.size - 1;
+
     val questionTextResId = questionBank[currentindex].textResId;
     questionTextView.setText(questionTextResId);
   }
@@ -264,18 +266,60 @@ class MainActivity : AppCompatActivity() {
         //toast.setGravity(Gravity.TOP, 0, 0);
         toast.show();
     }
-    private fun nextQuestion(){
-        currentindex = (currentindex+1) % questionBank.size;
-        val questionTextResId = questionBank[currentindex].textResId;
-        questionTextView.setText(questionTextResId);
-    }
-    private fun previosQuestion(){
-        if(currentindex == 0) currentindex = questionBank.size;
 
-        currentindex = (currentindex-1) % questionBank.size;
+    private fun nextQuestion(){
+        currentindex++;
+        if(currentindex == questionBank.size) currentindex = questionBank.size - 1;
+
         val questionTextResId = questionBank[currentindex].textResId;
         questionTextView.setText(questionTextResId);
     }
+
+    private fun previosQuestion(){
+        currentindex--;
+        if(currentindex < 0) currentindex = 0;
+
+        val questionTextResId = questionBank[currentindex].textResId;
+        questionTextView.setText(questionTextResId);
+    }
+}
+```
+
+### ! Исправил зацикливание вопросов на кнопки переходов !
+
+До:
+```kotlin
+private fun nextQuestion(){
+    currentindex = (currentindex + 1) % questionBank.size;
+
+    val questionTextResId = questionBank[currentindex].textResId;
+    questionTextView.setText(questionTextResId);
+}
+
+private fun previosQuestion(){
+    currentindex = (currentindex - 1) % questionBank.size;
+
+    val questionTextResId = questionBank[currentindex].textResId;
+    questionTextView.setText(questionTextResId);
+}
+```
+
+После:
+```kotlin
+private fun nextQuestion(){
+    currentindex++;
+    if(currentindex == questionBank.size) currentindex = questionBank.size - 1;
+
+    val questionTextResId = questionBank[currentindex].textResId;
+    questionTextView.setText(questionTextResId);
+}
+
+private fun previosQuestion(){
+    currentindex--;
+    if(currentindex < 0) currentindex = 0;
+
+    val questionTextResId = questionBank[currentindex].textResId;
+    questionTextView.setText(questionTextResId);
 }
 ```
 

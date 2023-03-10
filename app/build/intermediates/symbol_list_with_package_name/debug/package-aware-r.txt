@@ -3649,7 +3649,6 @@ string question_2
 string question_3
 string question_4
 string question_5
-string question_text
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

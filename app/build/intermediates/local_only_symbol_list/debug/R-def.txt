@@ -32,7 +32,6 @@ string question_2
 string question_3
 string question_4
 string question_5
-string question_text
 string true_button
 style Theme.GeoQuize
 xml backup_rules
