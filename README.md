@@ -165,6 +165,22 @@ private fun showToast(text: String){
 }
 ```
 
+### Итоги работы
+
+<p align = "center">Так выглядят кнопки на вопросе, на который уже был дан ответ:</p>
+
+<p align = "center">
+<img src = "img/3.1.png">
+</p>
+
+<p align = "center">А так выглядит всплывающий `Toast`, когда на все вопросы был дан ответ:</p>
+
+<p align = "center">
+<img src = "img/3.2.png">
+<br>
+<img src = "img/3.3.png">
+</p>
+
 ***
 
 # <p align = "center">Вывод</p>
