@@ -2,14 +2,12 @@ package com.zfginc.geoquize
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
+import kotlin.math.roundToInt
 
-private const val TAG = "MainActivity";
 class MainActivity : AppCompatActivity() {
     private lateinit var true_button:Button;
     private lateinit var false_button:Button;
@@ -31,7 +29,6 @@ class MainActivity : AppCompatActivity() {
     );
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        Log.d(TAG, "onCreate() called");
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
@@ -65,36 +62,42 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun trueButton(){
-        if(questionBank[currentindex].answer) {
+        if(questionBank[currentindex].answer)
             showToast(R.string.currect_toast);
-            nextQuestion();
-        }
-        else{
+        else
             showToast(R.string.incurrect_toast);
-        }
-    }
 
+        writeAnswer(true);
+        nextQuestion();
+    }
     private fun falseButton() {
-        if(!questionBank[currentindex].answer) {
+        if(!questionBank[currentindex].answer)
             showToast(R.string.currect_toast);
-            nextQuestion();
-        }
-        else{
+        else
             showToast(R.string.incurrect_toast);
-        }
+
+        writeAnswer(false);
+        nextQuestion();
     }
 
     private fun showToast(text: Int){
         toast = Toast.makeText(this, text, Toast.LENGTH_SHORT);
-        //toast.setGravity(Gravity.TOP, 0, 0);
         toast.show();
     }
+    private fun showToast(text: String){
+        toast = Toast.makeText(this, text, Toast.LENGTH_LONG);
+        toast.show();
+    }
+
     private fun nextQuestion(){
         currentindex++;
         if(currentindex == questionBank.size) currentindex = questionBank.size - 1;
 
         val questionTextResId = questionBank[currentindex].textResId;
         questionTextView.setText(questionTextResId);
+
+        checkAndLockButtons();
+        checkAndShowAnswered();
     }
     private fun previosQuestion(){
         currentindex--;
@@ -102,5 +105,51 @@ class MainActivity : AppCompatActivity() {
 
         val questionTextResId = questionBank[currentindex].textResId;
         questionTextView.setText(questionTextResId);
+
+        checkAndLockButtons();
+    }
+
+    private fun writeAnswer(answer : Boolean){
+        questionBank[currentindex].isAnswered = answer;
+    }
+    private fun checkAndLockButtons(){
+        if (questionBank[currentindex].isAnswered != null){
+            true_button.isClickable = false;
+            false_button.isClickable = false;
+
+            true_button.isEnabled = false;
+            false_button.isEnabled = false;
+        }
+        else{
+            true_button.isClickable = true;
+            false_button.isClickable = true;
+
+            true_button.isEnabled = true;
+            false_button.isEnabled = true;
+        }
+    }
+
+    private fun isAllAnswered() : Boolean {
+        for(quest in questionBank){
+            if(quest.isAnswered == null) return false;
+        }
+        return true;
+    }
+    private fun countTrueAnswered() : Int {
+        var count : Int = 0;
+        for(quest in questionBank){
+            if(quest.isAnswered == quest.answer) count++;
+        }
+
+        return count;
+    }
+    private fun checkAndShowAnswered(){
+        if(isAllAnswered()) {
+            var count : Int = countTrueAnswered();
+            var max : Int = questionBank.size;
+            var procent: Double = ((count.toDouble() / max) * 10000).roundToInt() / 100.0;
+
+            showToast("Вы ответили верно: " + count + "/" + max + "  -  " + procent + "%")
+        }
     }
 }
