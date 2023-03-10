@@ -286,7 +286,6 @@ class MainActivity : AppCompatActivity() {
 ```
 
 ### ! Исправил зацикливание вопросов на кнопки переходов !
-
 До:
 ```kotlin
 private fun nextQuestion(){
@@ -327,6 +326,8 @@ private fun previosQuestion(){
 <img src = "img/2.16-end.png">
 рис. 2.16
 </p>
+
+### ! Так же повысил minSdkVersion с 19 до 21!
 
 ***
 
