@@ -2752,6 +2752,7 @@ drawable material_ic_keyboard_arrow_previous_black_24dp
 drawable material_ic_keyboard_arrow_right_black_24dp
 drawable material_ic_menu_arrow_down_black_24dp
 drawable material_ic_menu_arrow_up_black_24dp
+drawable medal
 drawable mtrl_bottomsheet_drag_handle
 drawable mtrl_checkbox_button
 drawable mtrl_checkbox_button_checked_unchecked
@@ -3122,6 +3123,7 @@ id north
 id notification_background
 id notification_main_column
 id notification_main_column_container
+id number_question
 id off
 id on
 id onInterceptTouchReturnSwipe
@@ -3637,6 +3639,7 @@ string mtrl_timepicker_cancel
 string mtrl_timepicker_confirm
 string next_button
 string next_toast
+string notification_title
 string password_toggle_content_description
 string path_password_eye
 string path_password_eye_mask_strike_through
@@ -3649,6 +3652,8 @@ string question_2
 string question_3
 string question_4
 string question_5
+string question_6
+string question_7
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description
