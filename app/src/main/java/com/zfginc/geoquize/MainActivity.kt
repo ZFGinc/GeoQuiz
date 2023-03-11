@@ -44,7 +44,6 @@ class MainActivity : AppCompatActivity() {
         questionTextView = findViewById(R.id.question_text);
         number_question = findViewById(R.id.number_question);
 
-
         true_button.setOnClickListener(){
             trueButton();
         }
