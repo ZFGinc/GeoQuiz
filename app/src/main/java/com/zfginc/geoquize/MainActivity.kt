@@ -1,7 +1,10 @@
 package com.zfginc.geoquize
 
+import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
@@ -18,6 +21,7 @@ private const val KEY_INDEX = "SAVE_QUIZ"
 class MainActivity : AppCompatActivity() {
     private lateinit var true_button:Button;
     private lateinit var false_button:Button;
+    private lateinit var end_button:Button;
 
     private lateinit var next_button:ImageButton;
     private lateinit var previos_button:ImageButton;
@@ -39,6 +43,7 @@ class MainActivity : AppCompatActivity() {
 
         true_button = findViewById(R.id.true_button);
         false_button = findViewById(R.id.false_button);
+        end_button = findViewById(R.id.end_button);
         next_button = findViewById(R.id.next_button);
         previos_button = findViewById(R.id.previos_button);
         questionTextView = findViewById(R.id.question_text);
@@ -49,6 +54,10 @@ class MainActivity : AppCompatActivity() {
         }
         false_button.setOnClickListener(){
             falseButton();
+        }
+        end_button.setOnClickListener(){
+            val intent = AllAnswers.newIntent(this@MainActivity, quizViewModel.getAnswers())
+            startActivity(intent)
         }
 
         next_button.setOnClickListener(){
@@ -64,6 +73,8 @@ class MainActivity : AppCompatActivity() {
 
         val questionTextResId = quizViewModel.currentQuestionText
         questionTextView.setText(questionTextResId)
+
+        checkAndLockButtons();
     }
 
     private fun trueButton(){
@@ -124,6 +135,22 @@ class MainActivity : AppCompatActivity() {
 
             true_button.isEnabled = false;
             false_button.isEnabled = false;
+
+            setDefaultColorButton(true_button);
+            setDefaultColorButton(false_button);
+
+            if(quizViewModel.currentQuestionAnswer){
+                if(quizViewModel.currentQuestionAnswer == quizViewModel.currentQuestionAnswered)
+                    setGreenColorButton(true_button);
+                else
+                    setRedColorButton(false_button);
+            }
+            else{
+                if(quizViewModel.currentQuestionAnswer == quizViewModel.currentQuestionAnswered)
+                    setGreenColorButton(false_button);
+                else
+                    setRedColorButton(true_button);
+            }
         }
         else{
             true_button.isClickable = true;
@@ -131,6 +158,9 @@ class MainActivity : AppCompatActivity() {
 
             true_button.isEnabled = true;
             false_button.isEnabled = true;
+
+            setDefaultColorButton(true_button);
+            setDefaultColorButton(false_button);
         }
     }
     private fun checkAndShowAnswered(){
@@ -141,7 +171,23 @@ class MainActivity : AppCompatActivity() {
             var output: String = "Вы ответили верно: " + count + "/" + max + "  -  " + procent + "%";
 
             showToast(output);
+
+            end_button.isClickable = true;
+            end_button.visibility = View.VISIBLE;
         }
+    }
+
+    private fun setGreenColorButton(button:Button){
+        button.setBackgroundColor(Color.GREEN);
+        button.setTextColor(Color.WHITE);
+    }
+    private fun setRedColorButton(button:Button){
+        button.setBackgroundColor(Color.RED);
+        button.setTextColor(Color.WHITE);
+    }
+    private fun setDefaultColorButton(button:Button){
+        button.setBackgroundColor(Color.BLUE);
+        button.setTextColor(Color.WHITE);
     }
 
     override fun onSaveInstanceState(savedInstanceState: Bundle) {

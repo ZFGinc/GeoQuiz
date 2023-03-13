@@ -8,10 +8,6 @@
         "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.zfginc.geoquize.app-merged_res-29:/layout-land_activity_main.xml.flat",
-        "source": "com.zfginc.geoquize.app-main-31:/layout-land/activity_main.xml"
-    },
-    {
         "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\drawable_arrow_rigth.png.flat",
         "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\drawable\\arrow_rigth.png"
     },
@@ -34,6 +30,10 @@
     {
         "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\mipmap-xhdpi_ic_launcher.webp.flat",
         "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\layout_activity_all_answers.xml.flat",
+        "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\layout\\activity_all_answers.xml"
     },
     {
         "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\layout-land_activity_main.xml.flat",

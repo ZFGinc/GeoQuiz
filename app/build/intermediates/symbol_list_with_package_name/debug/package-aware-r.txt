@@ -2881,6 +2881,8 @@ id alertTitle
 id aligned
 id all
 id allStates
+id all_answers
+id all_answers_title
 id always
 id animateToEnd
 id animateToStart
@@ -2981,6 +2983,7 @@ id elastic
 id embed
 id end
 id endToStart
+id end_button
 id enterAlways
 id enterAlwaysCollapsed
 id exitUntilCollapsed
@@ -3146,12 +3149,14 @@ id position
 id postLayout
 id pressed
 id previos_button
+id procent_answers_title
 id progress_circular
 id progress_horizontal
 id question_text
 id radio
 id ratio
 id rectangles
+id restart_button
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3410,6 +3415,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_all_answers
 layout activity_main
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -3518,6 +3524,7 @@ string abc_searchview_description_voice
 string abc_shareactionprovider_share_with
 string abc_shareactionprovider_share_with_application
 string abc_toolbar_collapse_description
+string all_answers_title
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
@@ -3532,6 +3539,7 @@ string character_counter_overflowed_content_description
 string character_counter_pattern
 string clear_text_end_icon_content_description
 string currect_toast
+string end_button
 string error_a11y_label
 string error_icon_content_description
 string exposed_dropdown_menu_content_description
@@ -3654,6 +3662,7 @@ string question_4
 string question_5
 string question_6
 string question_7
+string restart_button
 string search_menu_title
 string searchbar_scrolling_view_behavior
 string searchview_clear_text_content_description

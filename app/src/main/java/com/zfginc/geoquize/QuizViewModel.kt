@@ -62,4 +62,21 @@ class QuizViewModel: ViewModel() {
 
         return count;
     }
+
+    fun getAnswers() : BooleanArray? {
+        var answers = BooleanArray(8)
+
+        for(i in 0..7) {
+            if(questionBank[i].isAnswered == null) answers[i] = false;
+            else if (questionBank[i].isAnswered == true) answers[i] = true;
+            else answers[i] = false;
+        }
+
+        return answers;
+    }
+
+    fun setAnswers(answers : BooleanArray?) {
+        for(i in 0..7)
+            questionBank[i].isAnswered = answers?.get(i);
+    }
 }

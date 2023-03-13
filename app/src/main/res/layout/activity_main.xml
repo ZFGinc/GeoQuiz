@@ -30,14 +30,14 @@
 
         <Button
             android:id="@+id/true_button"
-            android:layout_width="50pt"
+            android:layout_width="60pt"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:text="@string/true_button" />
 
         <Button
             android:id="@+id/false_button"
-            android:layout_width="50pt"
+            android:layout_width="60pt"
             android:layout_height="wrap_content"
             android:layout_margin="4dp"
             android:text="@string/false_button" />
@@ -66,5 +66,14 @@
             android:contentDescription="@string/next_button" />
 
     </LinearLayout>
+
+    <Button
+        android:id="@+id/end_button"
+        android:layout_width="100pt"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:visibility="invisible"
+        android:clickable="false"
+        android:text="@string/end_button" />
 
 </LinearLayout>

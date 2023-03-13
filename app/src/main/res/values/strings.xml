@@ -22,4 +22,9 @@
     <string name="question_5">Самый крупный по населению город - Москва?</string>
     <string name="question_6">Бурдж Халифа - самая высокая башня в мире?</string>
     <string name="question_7">Атомиум - достопримечательность Франции?</string>
+    //
+
+    <string name="all_answers_title">Итоговая информация</string>
+    <string name="restart_button">Начать заново</string>
+    <string name="end_button">Статистика</string>
 </resources>

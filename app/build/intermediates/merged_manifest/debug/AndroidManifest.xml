@@ -28,6 +28,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.GeoQuize" >
         <activity
+            android:name="com.zfginc.geoquize.AllAnswers"
+            android:exported="false" />
+        <activity
             android:name="com.zfginc.geoquize.MainActivity"
             android:exported="true" >
             <intent-filter>
