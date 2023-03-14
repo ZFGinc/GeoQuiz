@@ -1,17 +1,15 @@
 package com.zfginc.geoquize
 
-import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.Window
 import android.widget.Button
 import android.widget.ImageButton
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.app.NotificationCompat
-import androidx.core.app.NotificationManagerCompat
 import androidx.lifecycle.ViewModelProviders
 import kotlin.math.roundToInt
 
@@ -178,15 +176,15 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun setGreenColorButton(button:Button){
-        button.setBackgroundColor(Color.GREEN);
+        button.setBackgroundColor(resources.getColor(R.color.green_500));
         button.setTextColor(Color.WHITE);
     }
     private fun setRedColorButton(button:Button){
-        button.setBackgroundColor(Color.RED);
+        button.setBackgroundColor(resources.getColor(R.color.red_500));
         button.setTextColor(Color.WHITE);
     }
     private fun setDefaultColorButton(button:Button){
-        button.setBackgroundColor(Color.BLUE);
+        button.setBackgroundColor(resources.getColor(R.color.blue_500));
         button.setTextColor(Color.WHITE);
     }
 

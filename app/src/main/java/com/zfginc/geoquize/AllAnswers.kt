@@ -42,10 +42,11 @@ class AllAnswers : AppCompatActivity() {
         restart_button = findViewById(R.id.restart_button);
 
         restart_button.setOnClickListener(){
-            val intent = Intent(this@AllAnswers, MainActivity::class.java)
-            startActivity(intent)
+            val intent = Intent(this@AllAnswers, MainActivity::class.java);
+            startActivity(intent);
         }
 
+        quizViewModel.currentIndex = 0;
         for (i in 0..7){
             addQuestion();
         }
@@ -96,7 +97,7 @@ class AllAnswers : AppCompatActivity() {
         mainLinearLayout.addView(layout);
 
         var space = Space(this);
-        space.layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, 5);
+        space.layoutParams = LayoutParams(LayoutParams.MATCH_PARENT, 10);
 
         mainLinearLayout.addView(space);
 

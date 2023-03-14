@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\layout-land_activity_all_answers.xml.flat",
+        "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\layout-land\\activity_all_answers.xml"
+    },
+    {
         "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
@@ -32,16 +36,16 @@
         "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\layout_activity_all_answers.xml.flat",
-        "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\layout\\activity_all_answers.xml"
+        "merged": "com.zfginc.geoquize.app-merged_res-29:/layout_activity_all_answers.xml.flat",
+        "source": "com.zfginc.geoquize.app-main-31:/layout/activity_all_answers.xml"
     },
     {
         "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\layout-land_activity_main.xml.flat",
         "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\layout-land\\activity_main.xml"
     },
     {
-        "merged": "com.zfginc.geoquize.app-merged_res-29:/layout_activity_main.xml.flat",
-        "source": "com.zfginc.geoquize.app-main-31:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\layout_activity_all_answers.xml.flat",
+        "source": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-main-31:\\layout\\activity_all_answers.xml"
     },
     {
         "merged": "C:\\Users\\Kizai.KIZAI-WIN\\.gradle\\daemon\\7.5\\com.zfginc.geoquize.app-merged_res-29:\\mipmap-anydpi-v33_ic_launcher.xml.flat",

@@ -106,7 +106,7 @@ MERGED from [androidx.startup:startup-runtime:1.1.1] C:\Users\Kizai.KIZAI-WIN\.g
 	android:dataExtractionRules
 		ADDED from C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:9:9-65
 activity#com.zfginc.geoquize.AllAnswers
-ADDED from C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:16:9-18:40
+ADDED from C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:16:9-18:39
 	android:exported
 		ADDED from C:\Users\Kizai.KIZAI-WIN\Desktop\AndroidStudioProjects\GeoQuiz\app\src\main\AndroidManifest.xml:18:13-37
 	android:name
